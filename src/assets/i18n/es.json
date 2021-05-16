@@ -1,0 +1,47 @@
+{
+  "HOME": {
+    "TITLE": "Bienvenido a CityCycles",
+    "MANUAL_SEARCH": "Búsqueda manual",
+    "GPS&SEARCH": "GPS y búsqueda",
+    "SETTINGS": "Ajustes",
+    "FAVOURITES": "Favoritos",
+    "SEARCHBYCITY": "Buscar por ciudad",
+    "SEARCHBTN": "Buscar",
+    "INPUTPLACEHOLDER": "Por favor ingrese el nombre de la ciudad",
+    "PLEASEENTERCITY": "Por favor ingrese una ciudad",
+    "DOESNOTEXIST": "Lo siento esta ciudad no está disponible"
+  },
+  "NAVBAR":{
+    "HOMEPAGE": "Casa",
+    "FAVOURITESPAGE": "Favoritos",
+    "DASHBOARDPAGE": "Tablero"
+  },
+  "SETTINGS":{
+    "THEMESTYLE": "Cambiar idioma",
+    "UNITOFTEMP": "Unidad de temperatura",
+    "UNITOFSPEED": "Unidad de velocidad",
+    "LOCATIONTRACKING": "Seguimiento de ubicación",
+    "CLEARHISTORY": "Claro historial",
+    "DARK": "Oscuro",
+    "LIGHT": "Ligero",
+    "YES": "SÍ",
+    "NO": "NO",
+    "ON": "EN",
+    "OFF":"¡PARA!"
+  },
+  "FAVOURITES": {
+    "TITLE": "Tus favoritos",
+    "DEFAULT": "Aquí es donde se encuentran tus favoritos"
+  },
+  "DASHBOARD": {
+    "DISTANCETRAVELED": "Distancia viajada",
+    "AVERAGESPEED": "Velocidad media",
+    "TRIPDURATION": "Duración del viaje",
+    "CALORIESBURNED": "Calorías quemadas",
+    "STARTTIME": "Hora de inicio",
+    "STOPTIME": "Para el tiempo"
+  },
+  "DOESNOTEXIST":{
+    "TITLE": "Lo sentimos, esta página no existe"
+  }
+}

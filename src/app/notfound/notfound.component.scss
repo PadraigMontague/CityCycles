@@ -1,0 +1,34 @@
+/*LOGO*/
+
+.logo {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.appLogo {
+  height: auto;
+  width: 100%;
+}
+
+.doesNotExist {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+@media only screen and(max-width: 1920px) {
+  .logo {
+    width: 40%;
+  }
+}
+
+@media only screen and(max-width: 600px) {
+  .logo {
+    width: 50%;
+  }
+}

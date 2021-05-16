@@ -1,0 +1,3 @@
+<div class="navbar">
+    <div class="navLink" *ngFor='let navigationLink of navigationLinks'><a [routerLinkActiveOptions]='{exact: true}' routerLinkActive='active'  [routerLink]="navigationLink.path">{{ navigationLink.name | translate}}</a></div>
+</div>

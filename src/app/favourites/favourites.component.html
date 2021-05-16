@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row mt-5">
+    <p class="favTitle">{{ 'FAVOURITES.TITLE' | translate }}</p>
+  </div>
+  <div class="row mt-5 mb-5">
+    <div class="shelterWrapper" *ngIf="isEmpty > 0">
+      <div class="outterShelterDivs" *ngFor="let fav of favourites; let i = index">
+        <div class="tabs">
+          <div class="detailsDiv">
+            <div class="shelterName">{{ fav.name }}</div>
+            <div class="statusDiv">{{ fav.status }}</div>
+          </div>
+          <div class="removeFav" (click)="deleteFav(i)"><i class="fas fa-trash"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="slideBtns" *ngIf="submitted === true">
+      <button type="radio" class="shelterSlideBtn" (click)="previousTen()">Prev</button>
+      <button type="radio" class="shelterSlideBtn" (click)="nextTen()">Next</button>
+    </div>
+  </div>
+  <div class="defaultDiv" *ngIf="isEmpty === 0">
+      <i class="fas fa-star defaultFav"></i>
+    <p class="defaultTitle">{{ 'FAVOURITES.DEFAULT' | translate }}</p>
+  </div>
+</div>

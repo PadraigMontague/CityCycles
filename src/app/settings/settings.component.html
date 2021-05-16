@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row mt-5">
+    <p class="settings">{{ 'SETTINGS.THEMESTYLE' | translate }}</p>
+    <div class="selectorWrapper">
+      <input type="radio" name="theme" id="spanish" (click)='langPref(spanish)' checked>
+      <label class="labelLeft1" for="spanish">{{spanish}}</label>
+      <input type="radio" name="theme" (click)='langPref(english)' id="english">
+      <label class="labelRight1" for="english">{{english}}</label>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <p class="settings">{{ 'SETTINGS.UNITOFTEMP' | translate }}</p>
+    <div class="selectorWrapper">
+      <input type="radio" name="Temperature" id="C" (click)="tempPref('c')" checked>
+      <label class="labelLeft2" for="C">C</label>
+      <input type="radio" name="Temperature" id="F" (click)="tempPref('f')">
+      <label class="labelRight2" for="F">F</label>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <p class="settings">{{ 'SETTINGS.UNITOFSPEED' | translate }}</p>
+    <div class="selectorWrapper">
+      <input type="radio" name="Speed" id="km" (click)="speedPref('km')" checked>
+      <label class="labelLeft3" for="km">km/h</label>
+      <input type="radio" name="Speed" id="m" (click)="speedPref('m')">
+      <label class="labelRight3" for="m">m/h</label>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <p class="settings">{{ 'SETTINGS.LOCATIONTRACKING' | translate }}</p>
+    <div class="selectorWrapper">
+      <input class="trackingOn" type="radio" name="Tracking" id="ON" checked (click)="enableGPS()">
+      <label class="labelLeft4" for="ON">{{ 'SETTINGS.ON' | translate }}</label>
+      <input class="trackingOff" type="radio" name="Tracking" id="OFF" (click)="disableGPS()">
+      <label class="labelRight4" for="OFF">{{ 'SETTINGS.OFF' | translate }}</label>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <p class="settings">{{ 'SETTINGS.CLEARHISTORY' | translate }}</p>
+    <div class="selectorWrapper">
+      <input type="radio" name="History" id="YES" (click)="clearLocalData()">
+      <label class="labelLeft5" for="YES">{{ 'SETTINGS.YES' | translate }}</label>
+      <input type="radio" name="History" id="NO" checked>
+      <label class="labelRight5" for="NO">{{ 'SETTINGS.NO' | translate }}</label>
+    </div>
+  </div>
+</div>

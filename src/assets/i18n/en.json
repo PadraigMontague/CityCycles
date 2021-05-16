@@ -1,0 +1,47 @@
+{
+  "HOME": {
+    "TITLE": "Welcome To CityCycles",
+    "MANUAL_SEARCH": "Manual search",
+    "GPS&SEARCH": "GPS & search",
+    "SETTINGS": "Settings",
+    "FAVOURITES": "Favourites",
+    "SEARCHBYCITY": "Search by city",
+    "SEARCHBTN": "Search",
+    "INPUTPLACEHOLDER": "Please Enter City Name",
+    "PLEASEENTERCITY": "Please Enter A City",
+    "DOESNOTEXIST": "Sorry this city is not available"
+  },
+  "NAVBAR": {
+    "HOMEPAGE": "Home",
+    "FAVOURITESPAGE": "Favourites",
+    "DASHBOARDPAGE": "Dashboard"
+  },
+  "SETTINGS": {
+    "THEMESTYLE": "Change language",
+    "UNITOFTEMP": "Unit of temperature",
+    "UNITOFSPEED": "Unit of speed",
+    "LOCATIONTRACKING": "Location tracking",
+    "CLEARHISTORY": "Clear history",
+    "DARK": "Dark",
+    "LIGHT": "Light",
+    "YES": "YES",
+    "NO": "NO",
+    "ON": "ON",
+    "OFF": "OFF"
+  },
+  "FAVOURITES": {
+    "TITLE": "Your favourites",
+    "DEFAULT": "This is where your favourites are situated"
+  },
+  "DASHBOARD": {
+    "DISTANCETRAVELED": "Distance traveled",
+    "AVERAGESPEED": "Average speed",
+    "TRIPDURATION": "Trip duration",
+    "CALORIESBURNED": "Calories burned",
+    "STARTTIME": "START TIME",
+    "STOPTIME": "STOP TIME"
+  },
+  "DOESNOTEXIST":{
+    "TITLE": "Sorry This Page Does Not Exist"
+  }
+}

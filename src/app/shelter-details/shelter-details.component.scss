@@ -1,0 +1,191 @@
+/*Shelter Details Divs*/
+.shelterName {
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.numOfStands {
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+}
+
+.availBikes {
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.emptyStands {
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.status,
+.distFromUser,
+.temperature,
+.windSpeed {
+  color: #479adc;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 900;
+  width: 100%;
+}
+
+.percentageBikes,
+.percentageStands {
+  width: 96%;
+  height: auto;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  margin-top: -10rem;
+  font-size: 2rem;
+}
+
+.statsRes,
+.distRes {
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: -1rem;
+}
+
+/*Container*/
+.container {
+  height: 89%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: 100%;
+  margin-top: 0rem;
+}
+
+/*Scrollbar*/
+.shelterName::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+.shelterName::-webkit-scrollbar-thumb {
+  background-color: #ffffff54;
+}
+
+@media only screen and (max-width: 2560px) {
+  .wrapper {
+    min-height: 100%;
+    height: 100%;
+    margin-top: 15rem;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .shelterName {
+    margin-top: 1.3rem;
+  }
+}
+
+@media only screen and (max-width:1280px) {
+  .wrapper {
+    min-height: 82%;
+    height: 82%;
+    margin-top: -1rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .percentageBikes,
+  .percentageStands {
+    width: 88%;
+    margin-top: -31%;
+    font-size: 1.5rem;
+  }
+
+  .tabletMargin {
+    margin-top: 2.2rem !important;
+  }
+
+  .col-sm {
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 40%;
+  }
+
+  .wrapper {
+    min-height: 82%;
+    height: 82%;
+    margin-top: 0rem !important;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  .percentageBikes,
+  .percentageStands {
+    width: 88%;
+    margin-top: -31%;
+    font-size: 1.5rem;
+  }
+
+  .tabletMargin {
+    margin-top: 2.2rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mobileMargin {
+    margin-top: 3rem !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .col-sm {
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .percentageBikes,
+  .percentageStands {
+    width: 83%;
+    margin-top: -28%;
+    font-size: 1rem;
+  }
+
+  .col-sm {
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mobileMargin {
+    margin-top: 1rem !important;
+  }
+
+  .col-sm {
+    max-width: 50%;
+  }
+}

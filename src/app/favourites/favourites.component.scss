@@ -1,0 +1,139 @@
+.favTitle {
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.shelterName {
+  width: 93%;
+  height: 54px;
+  padding-top: 5%;
+  padding-bottom: 9%;
+  font-size: 1.3rem;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tabs {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding-left: 1rem;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 3px;
+  border-color: #292929;
+  border-style: solid;
+  border-width: 1px;
+  color: #3f51b5;
+  margin-top: 0.5rem;
+}
+
+.detailsDiv {
+  width: 80%;
+  height: 100%;
+  font-size: 100%;
+  padding: 15px 0;
+}
+
+.outterShelterDivs {
+  width: 100%;
+  height: 7rem;
+}
+
+.shelterWrapper {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.defaultDiv {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+.statusDiv {
+  width: 45%;
+  height: 2rem;
+  float: left;
+  margin-top: 0.57rem;
+  background-color: #4CAF50;
+  margin-left: -1rem;
+  color: #fff;
+  padding-top: 0.2rem;
+  text-align: center;
+}
+
+.removeFav {
+  width: 19%;
+  height: 100%;
+  float: right;
+  background-color: #fe5b5b;
+  margin-left: -1rem;
+  color: #fff;
+  padding-top: 0.2rem;
+  margin-top: -6.9rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.removeFav:hover,
+.removeFav:focus {
+  background-color: #c73838;
+  transition: background-color 200ms linear;
+}
+
+.fa-trash {
+  font-size: 2rem;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+  cursor: pointer;
+}
+
+.fa-trash:hover,
+.fa-trash:focus {
+  font-size: 2.1rem;
+  transition: background-color 200ms linear;
+}
+
+.defaultTitle {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: 1rem;
+}
+
+.defaultFav {
+  font-size: 3rem;
+  color: #ffffffbd;
+  text-align: center;
+}
+
+@media only screen and(max-width: 2560px) {
+  .shelterName {
+    padding-top: 1.2%;
+    padding-bottom: 3%;
+  }
+}
+
+@media only screen and(max-width: 1920px) {
+  .shelterName {
+    padding-top: 1%;
+    padding-bottom: 3%;
+  }
+}

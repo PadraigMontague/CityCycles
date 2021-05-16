@@ -1,0 +1,104 @@
+<div class="container one">
+  <div class="row mt-5">
+    <div class="appLogo">
+      <img class="logo" src="../../assets/logo/CityCycles-logo.png">
+    </div>
+  </div>
+  <div class="row mt-3">
+    <p class="homePageTitle">{{ 'HOME.TITLE' | translate }}</p>
+  </div>
+  <div class="row">
+    <div class="col-lg">
+      <button class="manualSearch" (click)="manualSearch()">
+        <i class="fas fa-search"></i>
+        {{ 'HOME.MANUAL_SEARCH' | translate }}
+      </button>
+      <button class="enableGPS">
+        <i class="fas fa-map-marked-alt" (click)="enableGPS()"></i>
+        {{ 'HOME.GPS&SEARCH' | translate }}
+      </button>
+    </div>
+    <div class="col-lg mobileMargin">
+      <button class="manualSearch" (click)='navigateToSettings()'>
+        <i class="fas fa-cogs"></i>
+        {{ 'HOME.SETTINGS' | translate }}
+      </button>
+      <button class="enableGPS" (click)='navigateToFavourites()'>
+        <i class="fas fa-star"></i>
+        {{ 'HOME.FAVOURITES' | translate }}
+      </button>
+    </div>
+  </div>
+</div>
+<div class="container two">
+  <div class="row">
+    <div class="settingIcon">
+      <i class="fas fa-cog" (click)="navigateToSettings()"></i>
+    </div>
+  </div>
+  <div class="row mt-5 searchDiv">
+    <p class="searchCityName">{{ 'HOME.SEARCHBYCITY' | translate }}</p>
+    <form [formGroup]="search" (ngSubmit)="searchByCity()">
+      <div class="feedback">{{ feedbackMessage }}</div>
+      <div class="form-group">
+        <input type="text" class="form-control" formControlName="city_name" id="city_name"
+          placeholder="{{'HOME.INPUTPLACEHOLDER' | translate}}" required>
+      </div>
+      <button type="submit" class="searchByCity">{{ 'HOME.SEARCHBTN' | translate }}</button>
+    </form>
+  </div>
+  <div class="row recentDiv">
+    <div *ngIf="isEmpty > 0" class="col-sm mt-5 recentSearch">
+      <button *ngIf="isEmpty === 1 || isEmpty >=1 " class="cityOne" (click)='clickSearch(recentCitiesReload[0])'>
+        {{ recentCitiesReload[0] }}
+      </button>
+      <button *ngIf="isEmpty === 2 || isEmpty >= 2" class="cityTwo" (click)='clickSearch(recentCitiesReload[1])'>
+        {{ recentCitiesReload[1] }}
+      </button>
+      <button *ngIf="isEmpty === 3 || isEmpty >= 3" class="cityThree mt-3" (click)='clickSearch(recentCitiesReload[2])'>
+        {{ recentCitiesReload[2] }}
+      </button>
+      <button *ngIf="isEmpty === 4 || isEmpty === 4 " class="cityFour" (click)='clickSearch(recentCitiesReload[3])'>
+        {{ recentCitiesReload[3] }}
+      </button>
+    </div>
+    <div *ngIf="isRecentCitiesEmpty > 0" class="col-sm mt-5 recentSearch">
+      <button *ngIf="isRecentCitiesEmpty === 1 || isRecentCitiesEmpty >=1" class="cityOne"
+        (click)='clickSearch()'>{{ recentCities[0] }}</button>
+      <button *ngIf="isRecentCitiesEmpty === 2 || isRecentCitiesEmpty >= 2" class="cityTwo"
+        (click)="clickSearch(recentCities[1])">
+        {{ recentCities[1] }}
+      </button>
+      <button *ngIf="isRecentCitiesEmpty === 3 || isRecentCitiesEmpty >= 3" class="cityThree mt-3"
+        (click)="clickSearch(recentCities[2])">
+        {{ recentCities[2] }}
+      </button>
+      <button *ngIf="isRecentCitiesEmpty === 4 || isRecentCitiesEmpty === 4 " class="cityFour"
+        (click)="clickSearch(recentCities[3])">
+        {{ recentCities[3] }}
+      </button>
+    </div>
+  </div>
+  <div class="row mt-5 mb-5">
+    <div class="shelterWrapper">
+      <div class="outterShelterDivs" *ngFor="let shelter of tenShelters; let i = index">
+        <div class="tabs">
+          <a routerLink="/shelter-details/{{shelter.number}}/{{shelter.contract_name}}">
+            <div class="moreInfo"><i class="fas fa-arrow-circle-right" (click)="userDistance(coords[i])"></i></div>
+          </a>
+          <div class="detailsDiv">
+            <div class="shelterName">{{shelter.name}}</div>
+            <div class="statusDiv">{{shelter.status}}</div>
+            <div class="distanceAway" *ngIf = "coordsEmpty != 0">{{coords[i]}}</div>
+            <!--<button class="saveToFav" (click)="addToFav(shelter.name, shelter.status)"></button>-->
+            <i class="fas fa-star saveToFav a{{i}}" (click)="addToFav(shelter.name, shelter.status, i)"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slideBtns" *ngIf="submitted === true">
+      <button type="radio" class="shelterSlideBtn" (click)="previousTen()">Prev</button>
+      <button type="radio" class="shelterSlideBtn" (click)="nextTen()">Next</button>
+    </div>
+  </div>
+</div>

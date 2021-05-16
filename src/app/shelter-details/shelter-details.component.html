@@ -1,0 +1,40 @@
+<div class="container wrapper">
+  <p *ngIf="!shelterDetails">LOADING...</p>
+  <div class="outterDiv" *ngIf="shelterDetails">
+    <div class="shelterName mobileMargin tabletMargin">{{shelterDetails.name}}</div>
+    <div class="row mobileMargin tabletMargin">
+      <div class="col-sm col-6">
+        <canvas class="chartJS" baseChart [data]="availBikeData" [chartType]="chartType" [labels]="status"
+          [colors]="backgroundColors" [options]="chartOptions"></canvas>
+        <div class="percentageBikes">{{ percentageBikes }}%</div>
+        <p class="availBikes mt-2"> Available Bikes: {{shelterDetails.available_bikes}} </p>
+      </div>
+      <div class="col-sm col-6">
+        <canvas class="chartJS" baseChart [data]="availStandsData" [chartType]="chartType" [labels]="statusBikeStands"
+          [colors]="backgroundColors" [options]="chartOptions"></canvas>
+        <div class="percentageStands">{{ percentageStandsAvail }}%</div>
+        <p class="emptyStands mt-2">Available Stands: {{shelterDetails.available_bike_stands}}</p>
+      </div>
+    </div>
+    <div class="row mobileMargin tabletMargin">
+      <div class="col-sm col-6">
+        <p class="status"> Status</p>
+        <p class="statsRes">{{shelterDetails.status}}</p>
+      </div>
+      <div class="col-sm col-6">
+        <p class="distFromUser">Distance From You</p>
+        <p class="distRes">{{ distanceFromUser }}</p>
+      </div>
+    </div>
+    <div class="row mobileMargin tabletMargin">
+      <div class="col-sm col-6">
+        <p class="temperature">Temperature</p>
+        <p class="statsRes">{{ temperature }}</p>
+      </div>
+      <div class="col-sm col-6">
+        <p class="windSpeed">Wind Speed</p>
+        <p class="distRes">{{ windSpeed }}</p>
+      </div>
+    </div>
+  </div>
+</div>

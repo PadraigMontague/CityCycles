@@ -1,0 +1,273 @@
+.speed_outline {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 110px;
+  border-color: #ffffff24;
+}
+
+.speed {
+  text-align: center;
+  color: #fff;
+  font-size: 4rem;
+  margin-top: 2.4rem;
+}
+
+.km {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: -1.5rem;
+  font-size: 1rem;
+}
+
+.totalTime {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/*TRACKING*/
+.trackingBtns {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0rem;
+}
+
+.position_btn_start {
+  width: 30%;
+  height: 3rem;
+  background-color: #3180be;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+
+.position_btn_stop {
+  width: 30%;
+  height: 3rem;
+  background-color: #d64747;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  margin-top: 1rem;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+
+.position_btn_start:hover,
+.position_btn_start:focus {
+  background-color: #0073a7;
+  transition: background-color 200ms linear;
+  font-family: 'Roboto', sans-serif;
+}
+
+.position_btn_stop:hover,
+.position_btn_stop:focus {
+  background-color: #ee6666;
+  transition: background-color 200ms linear;
+  font-family: 'Roboto', sans-serif;
+}
+
+.distance_traveled {
+  margin-top: 1rem;
+  width: 50%;
+  text-align: center;
+  color: #ffffff80;
+  float: left;
+  font-family: 'Roboto', sans-serif;
+}
+
+.average_speed {
+  margin-top: 1rem;
+  width: 50%;
+  text-align: center;
+  color: #ffffff80;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+}
+
+.trip_dur {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 50%;
+  text-align: center;
+  color: #ffffff80;
+  float: left;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cal_burned {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 50%;
+  text-align: center;
+  color: #ffffff80;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*ICONS*/
+
+.fa-bicycle {
+  font-size: 2rem;
+}
+
+.fa-tachometer-alt {
+  font-size: 2rem;
+}
+
+.fa-stopwatch {
+  font-size: 2rem;
+}
+
+.fa-running {
+  font-size: 2rem;
+}
+
+.mt-5 {
+  margin-top: 2rem !important;
+}
+
+/*Container Wrapper*/
+.wrapper {
+  min-height: 100%;
+  height: 100%;
+  margin-top: 0rem;
+}
+
+@media only screen and (max-width: 2560px) {
+  .cal_burned {
+    margin-bottom: 1rem;
+  }
+
+  .trip_dur {
+    margin-bottom: 1rem;
+  }
+}
+
+
+@media only screen and (max-width:1280px) {
+  .wrapper {
+    min-height: 82%;
+    height: 82%;
+    margin-top: -1rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .wrapper {
+    min-height: 82%;
+    height: 82%;
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (max-width: 414px),
+screen and (max-height: 600px) {
+  .wrapper {
+    min-height: 82%;
+    height: 82%;
+    margin-top: 0rem !important;
+  }
+
+  .cal_burned {
+    margin-bottom: 1rem;
+  }
+
+  .trip_dur[_ngcontent-c2] {
+    margin-bottom: 1rem;
+  }
+
+  .position_btn_start,
+  .position_btn_stop {
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .fa-bicycle,
+  .fa-tachometer-alt,
+  .fa-stopwatch,
+  .fa-running {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media only screen and (max-width:320px),
+screen and (max-height: 568px) {
+
+  .fa-bicycle,
+  .fa-tachometer-alt,
+  .fa-stopwatch,
+  .fa-running {
+    font-size: 1.5rem;
+  }
+
+  .totalTime {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .wrapper {
+    min-height: 82%;
+    height: 82%;
+    margin-top: -1rem;
+  }
+
+  .mt-5 {
+    margin-top: 1.2rem !important;
+  }
+}
+
+@media only screen and(max-width: 1920px),
+screen and(max-height: 1080px) {
+  .wrapper {
+    min-height: 100%;
+    height: 100%;
+    margin-top: 14%;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .wrapper {
+    min-height: 100%;
+    height: 100%;
+    margin-top: -1rem;
+  }
+}
+
+@media only screen and (max-height: 568px) {
+  .cal_burned {
+    margin-bottom: 1rem;
+  }
+
+  .trip_dur[_ngcontent-c2] {
+    margin-bottom: 1rem;
+  }
+
+  .position_btn_start,
+  .position_btn_stop {
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+}

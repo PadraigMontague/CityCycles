@@ -1,0 +1,119 @@
+/*
+  START OFF REFERENCE
+  https://www.w3schools.com/howto/howto_css_switch.asp
+  I used the above website as a guide.
+*/
+input {
+  display: none;
+}
+
+input:checked+.labelLeft1,
+input:checked+.labelLeft2,
+input:checked+.labelLeft3,
+input:checked+.labelLeft4,
+input:checked+.labelLeft5 {
+  width: 49%;
+  height: 96%;
+  margin-top: 0.7%;
+  margin-bottom: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #121212;
+  -webkit-tranform: translate(1%);
+  -webkit-transform: translate(1%);
+  transform: translate(1%);
+}
+
+input:checked+.labelRight1,
+input:checked+.labelRight2,
+input:checked+.labelRight3,
+input:checked+.labelRight4,
+input:checked+.labelRight5 {
+  height: 96%;
+  margin-top: 0.7%;
+  margin-bottom: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #121212;
+  -webkit-tranform: translate(1%);
+  -webkit-transform: translate(1%);
+  transform: translate(1%);
+}
+
+/*END OFF REFERENCE*/
+.settings {
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding-right: 1rem;
+  width: 50%;
+  padding-left: 5%;
+  font-size: 1.5rem;
+}
+
+.optionOne {
+  color: #fff;
+  float: left;
+  margin-top: -28px;
+}
+
+.optionTwo {
+  color: #fff;
+  float: right;
+  margin-top: -28px;
+}
+
+
+.select {
+  width: 3rem;
+  height: 2rem;
+  background-color: #090909;
+}
+
+.deselect {
+  width: 3rem;
+  height: 2rem;
+  background-color: #ffffffa8;
+}
+
+label {
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  width: 50%;
+}
+
+.selectorWrapper {
+  width: 45%;
+  height: 2.3rem;
+  border: solid;
+  border-color: #ffffffad;
+  border-width: 0.2px;
+}
+
+@media only screen and(max-width: 1920px) {
+
+  input:checked+.labelLeft1,
+  input:checked+.labelLeft2,
+  input:checked+.labelLeft3,
+  input:checked+.labelLeft4,
+  input:checked+.labelLeft5 {
+    margin-top: -0.3%;
+  }
+
+  input:checked+.labelRight1,
+  input:checked+.labelRight2,
+  input:checked+.labelRight3,
+  input:checked+.labelRight4,
+  input:checked+.labelRight5 {
+    margin-top: -0.3%;
+  }
+}
+
+@media only screen and (max-width:320px),
+screen and (max-height: 568px) {
+
+  .mt-5,
+  .my-5 {
+    margin-top: 1.5rem !important;
+  }
+}
